@@ -155,6 +155,36 @@ Em vez de comprar e manter servidores físicos, você utiliza infraestrutura, ar
 
 ---
 
+## ⚡ Serverless (Computação sem servidor)
+
+Serverless é um modelo de computação onde você **não precisa gerenciar servidores**. A AWS cuida automaticamente da infraestrutura, escalabilidade e disponibilidade.
+
+Você foca apenas no código e na lógica da aplicação.
+
+### 🎯 Características
+- Execução sob demanda
+- Escala automática (elasticidade total)
+- Alta disponibilidade nativa
+- Cobrança por execução (pay-per-use)
+
+### 📌 Exemplo
+- AWS Lambda
+
+### 🧠 Quando usar
+- APIs leves
+- Processamento de eventos
+- Automações
+- Workloads intermitentes
+
+### ⚠️ Limitações
+- Tempo máximo de execução
+- Menor controle do ambiente
+- Pode ter *cold start*
+
+👉 Serverless é ideal quando você quer **simplicidade e escalabilidade sem gerenciar infraestrutura**
+
+---
+
 ## ⚠️ Pegadinhas comuns
 
 - Confundir **Região** com **AZ**
