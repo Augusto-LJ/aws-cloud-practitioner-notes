@@ -35,6 +35,7 @@ Ele garante:
   - Mínimo de instâncias
   - Máximo de instâncias
   - Capacidade desejada
+    - Se não especificar o número desejado, a capacidade desejada se tornará a capacidade mínima.
 
 ---
 
