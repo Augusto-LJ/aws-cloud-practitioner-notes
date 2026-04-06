@@ -98,30 +98,42 @@ São eles:
 
 ## 💰 Modelos de cobrança
 
-### On-Demand
+### Sob demanda (On-Demand)
 - Paga por uso (por hora/segundo)
-- Sem compromisso
+- Sem compromisso ou pagamentos adiantados
 
 ---
 
-### Reserved Instances
+### Instâncias reservadas (Reserved Instances)
 - Contrato de 1 ou 3 anos
-- Mais barato que On-Demand
+- 3 tipos de pagamento:
+  - Tudo adiantado: paga na íntegra
+  - Pagamento adiantado parcial: paga uma parte quando se compromete
+  - Sem pagamento adiantada: não paga nada no início
+- Até 75% de desconto em relação ao modelo sob demanda
+- Adequadas para cargas de trabalho de estado estacionário ou de uso previsível
 
 ---
 
-### Spot Instances
+### Instâncias Spot (Spot Instances)
 - Usa capacidade ociosa da AWS
-- Muito mais barato
-- Pode ser interrompido a qualquer momento
+- Muito mais barato (até 90% de desconto em relação ao modelo sob demanda)
+- Pode ser interrompido a qualquer momento, com um aviso de apenas 2 minutos
+- Bom para cargas de trabalho que podem tolerar interrupções (por exemplo, cargas de trabalho em lote)
 
 ---
 
 ### Savings Plans
-- Compromisso de uso (em $/hora)
-- Flexível e com desconto
+- Compromisso de uso (em $/hora) 
+- Flexível e com desconto de até 72% dependendo do caso
 
 ---
+
+### Hosts dedicados
+- Hosts físicos dedicados para o seu uso no EC2
+- Ninguém mais compartilhará o mesmo host
+- Normalmente utilizados para atender a requisitos de conformidade
+- É o mais caro de todos
 
 ## 🔒 Responsabilidade no EC2
 
