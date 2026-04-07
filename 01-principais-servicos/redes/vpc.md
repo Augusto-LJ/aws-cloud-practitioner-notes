@@ -41,9 +41,16 @@ A VPC (Virtual Private Cloud) é um serviço da AWS que permite criar uma **rede
 ---
 
 ### 🌍 Internet Gateway (IGW)
+<img width="909" height="501" alt="image" src="https://github.com/user-attachments/assets/a47cdbb3-f383-4eb4-b3b0-7d42e01a0b8d" />
+
 - Permite comunicação entre a VPC e a internet
 
 ---
+
+### 🌍 Gateway privado virtual
+<img width="934" height="438" alt="image" src="https://github.com/user-attachments/assets/29aab26e-7f27-4628-88ac-89fd3d24119f" />
+
+- Permite acessar recursos privados em uma VPC, estabelecendo uma conexão VPN entre a VPC e uma rede privada
 
 ### 🔄 Route Table
 - Define para onde o tráfego deve ir
