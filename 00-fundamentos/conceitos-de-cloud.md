@@ -95,14 +95,19 @@ Em vez de comprar e manter servidores físicos, você utiliza infraestrutura, ar
 ---
 
 ### 🏢 Zonas de Disponibilidade (AZ - Availability Zones)
+<img width="958" height="490" alt="image" src="https://github.com/user-attachments/assets/7692769e-e1d8-43c5-88e7-0e995cd98840" />
+
 - Data centers isolados dentro de uma região
-- Alta disponibilidade e tolerância a falhas
+- Cada data center fica a dezena de quilômetros de distância dos outros. Esta distância entre eles é:
+  - Pequena o suficiente para ter alta disponibilidade e baixa latência (ordem de milissegundos)
+  - Grande o suficiente para reduzir a chance de um desastre (por exemplo, terremoto destrói data center) afetar diversas AZs
 
 ---
 
 ### 🌐 Pontos de presença (Edge Locations)
-- Usadas para CDN (CloudFront)
-- Aproximam conteúdo do usuário final, diminuindo a latência
+- Usadas para rede de entrega de conteúdo (CDN): armazenar em cache um cópia dos dados para ficar mais perto de uma região específica
+- A CDN da AWS é a CloudFront
+- Aproximam conteúdo do usuário final, diminuindo a latência e oferecendo uma alta velocidade de transferência
 
 ---
 
