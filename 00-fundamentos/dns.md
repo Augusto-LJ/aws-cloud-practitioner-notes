@@ -9,6 +9,7 @@ Em termos simples, o DNS funciona como uma **agenda telefônica da internet**.
 ## 📌 Como funciona a resolução de DNS
 
 Quando um usuário acessa um site, ocorre o seguinte processo:
+<img width="881" height="289" alt="image" src="https://github.com/user-attachments/assets/5c70dcd7-04c2-47fd-b168-7c5ecb315ffd" />
 
 1. O usuário digita um domínio no navegador
 2. O dispositivo consulta um **resolvedor DNS**
