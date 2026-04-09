@@ -17,6 +17,8 @@ Uma NACL é um firewall virtual que controla tráfego de entrada e saída no **n
 
 - Cada pacote é analisado separadamente
 - Regras precisam existir para entrada e saída
+<img width="902" height="307" alt="image" src="https://github.com/user-attachments/assets/a9382512-2d04-441b-a16b-b8685ff9dc27" />
+
 
 ---
 
