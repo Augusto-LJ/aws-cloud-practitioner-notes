@@ -33,6 +33,12 @@ Funciona como um **disco rígido virtual**, onde você pode armazenar dados de f
 
 ---
 
+### ⏳ Armazenamento de instância (Instance store)
+- É um meio temporário de armazenamento a nível de bloco para uma instância do Amazon EC2.
+- É o armazenamento em disco fisicamente anexo ao computador host para uma instância do EC2 e, portanto, tem a mesma vida útil da instância.
+  - Ou seja: quando a instância for terminada, dados no armazenamento de instância são perdidos.
+
+---
 ### 🔗 Anexação
 - Volume deve estar na mesma AZ da instância
 - Pode ser anexado a uma instância por vez (na maioria dos casos)
@@ -46,7 +52,10 @@ Funciona como um **disco rígido virtual**, onde você pode armazenar dados de f
 ---
 
 ### 📸 Snapshots
-- Backups do volume EBS
+<img width="934" height="466" alt="image" src="https://github.com/user-attachments/assets/4cf68749-abd5-4578-8f23-f1ff13fa98c2" />
+
+- Backups incremental do volume EBS
+  - O primeiro backup de um volume copia todos os dados. Nos backups subsequentes, somente os blocos de dados que foram alterados desde o snapshot mais recente são salvos. 
 - Armazenados no S3
 - Permitem restaurar dados ou criar novos volumes
 
