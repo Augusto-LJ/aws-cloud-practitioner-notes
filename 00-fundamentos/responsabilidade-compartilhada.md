@@ -11,6 +11,7 @@ O modelo de responsabilidade compartilhada define **quais responsabilidades são
 ## ⚖️ Como funciona
 
 A responsabilidade é dividida em duas partes:
+<img width="979" height="535" alt="image" src="https://github.com/user-attachments/assets/88ded5c7-a189-4c51-9525-9c23bdd625eb" />
 
 - **AWS → segurança "da" nuvem (of the Cloud)**
 - **Cliente → segurança "na" nuvem (in the Cloud)**
