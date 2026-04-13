@@ -22,6 +22,7 @@ Ele permite criar um sistema de arquivos compartilhado, que pode ser acessado si
 - Você cria um sistema de arquivos EFS
 - Conecta (mount) em instâncias EC2
 - As instâncias acessam como se fosse um diretório local
+- Armazena dados em várias Zonas de Disponibilidade e entre elas
 
 ---
 
