@@ -25,6 +25,8 @@ Ele facilita a configuração, operação e escalabilidade de bancos de dados na
   - Backup
   - Atualizações
   - Alta disponibilidade (opcional)
+- É possível integrar o Amazon RDS a outros serviços
+  - Por exmeplo, usar o AWS Lambda para consultar um banco de dados de uma aplicação serverless
 
 ---
 
@@ -44,7 +46,12 @@ O RDS suporta diversos bancos de dados relacionais:
 ### ⭐ Amazon Aurora
 - Banco relacional otimizado pela AWS
 - Compatível com MySQL e PostgreSQL
+  - Até cinco vezes mais rápido que os bancos de dados MySQL comuns e até três vezes mais rápido que os bancos de dados PostgreSQL comuns
+  - O preço é 1/10 do custo de bases de dados comerciais
 - Melhor performance e escalabilidade
+- Replica seis cópias de seus dados em três Zonas de Disponibilidade e faz backup contínuo dos dados para o Amazon S3
+- Ajuda a reduzir os custos do banco de dados reduzindo operações desnecessárias de entrada/saída (E/S ou I/O)
+- Ideal quando as cargas de trabalho exigem alta disponibilidade
 
 ---
 
