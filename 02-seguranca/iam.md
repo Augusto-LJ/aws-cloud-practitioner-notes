@@ -4,7 +4,7 @@
 
 O IAM (Identity and Access Management) é o serviço da AWS responsável por **controle de acesso e permissões**.
 
-Ele define **quem pode acessar o quê** dentro da sua conta AWS.
+Ele define **quem pode acessar o quê** dentro da sua conta AWS e oferece a flexibilidade de configurar o acesso com base nas necessidades operacionais e de segurança específicas do sistema ou da empresa
 
 ---
 
@@ -26,34 +26,46 @@ Ele define **quem pode acessar o quê** dentro da sua conta AWS.
 
 ## 📦 Conceitos importantes
 
-### 👤 Usuário (User)
-- Representa uma pessoa ou aplicação
-- Possui credenciais de acesso
+### 🌱 Usuário raiz (Root user)
+- É o usuário criado ao criar uma conta AWS
+- Tem acesso completo a todos os serviços e recursos AWS na conta
+- Não é recomendado utilizar o usuário raiz para tarefas cotidianas
+  - Em vez disso, use o usuário-raiz para criar seu primeiro usuário do IAM e atribua a ele permissões para criar outros usuários.
 
 ---
 
-### 👥 Grupo (Group)
+### 👤 Usuário do IAM (IAM User)
+- Representa uma pessoa ou aplicação
+  - Recomendado que cada pessoa que precisa acessar a AWS tenha seu próprio usuário
+- Possui um nome e credenciais de acesso
+- Por padrão, ao ser criado, não possui nenhuma permissão
+
+---
+
+### 📜 Política do IAM (IAM Policy)
+- Documento JSON que concede ou nega permissões
+- Possibilita personalizar os níveis de acesso dos usuários aos recursos
+- Exemplo de política IAM:
+<img width="524" height="407" alt="image" src="https://github.com/user-attachments/assets/e1532b95-9d1c-4cf3-a561-0b15113a6fe0" />
+
+---
+
+### 👥 Grupo do IAM (IAM Group)
 - Conjunto de usuários com mesmas permissões
+  - Quando atribui uma política do IAM a um grupo, todos os usuários do grupo recebem permissões especificadas pela política
 - Facilita gerenciamento de permissões
 
 ---
 
-### 🎭 Role (Função)
+### 🎭 Perfis do IAM (IAM Roles)
 - Permissão temporária assumida por:
   - Serviços AWS
   - Aplicações
   - Usuários
+- Assumir um perfil significa revogar as permissões do perfil anterior e obter as permissões do novo perfil
+- São ideais para situações em que o acesso a serviços ou recursos precisa ser concedido temporariamente, em vez de por longo prazo
 
 👉 Muito usada para integração entre serviços
-
----
-
-### 📜 Policy (Política)
-- Documento JSON que define permissões
-- Especifica:
-  - Ações permitidas ou negadas
-  - Recursos
-  - Condições
 
 ---
 
@@ -74,6 +86,7 @@ Ele define **quem pode acessar o quê** dentro da sua conta AWS.
 
 - Usar **roles** ao invés de credenciais fixas
 - Aplicar o princípio do **menor privilégio**: dar a menor quantidade possível de permissões a um usuário
+  - Por exemplo, se um funcionário precisar acessar apenas um bucket específico, especifique o bucket na política do IAM vez de conceder ao funcionário acesso a todos os buckets
 - Evitar uso da conta root
 - Habilitar MFA (autenticação multifator)
 
