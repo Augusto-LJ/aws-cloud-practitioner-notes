@@ -3,7 +3,7 @@
 ## 📌 O que é
 
 O AWS WAF (Web Application Firewall) é um serviço que protege aplicações web contra **ataques comuns na camada HTTP/HTTPS**.
-
+Trabalha em conjunto com o Amazon CloudFront e um Application Load Balancer.
 Ele filtra e monitora o tráfego com base em regras definidas.
 
 ---
@@ -27,8 +27,11 @@ Ele filtra e monitora o tráfego com base em regras definidas.
 ## 📦 Conceitos importantes
 
 ### 📜 Web ACL (Access Control List)
-- Conjunto de regras aplicadas a um recurso
+- Conjunto de regras aplicadas a um recurso para protegê-lo
 - Define o que é permitido ou bloqueado
+- Pode definir por exemplo uma lista de IPs bloqueados, que não são permitidos acessar uma aplicação
+<img width="518" height="952" alt="image" src="https://github.com/user-attachments/assets/913c9c08-db61-4011-9d09-340bae8e07bf" />
+
 
 ---
 
