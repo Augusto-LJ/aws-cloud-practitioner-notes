@@ -4,7 +4,7 @@
 
 O Amazon CloudWatch é um serviço de **monitoramento e observabilidade** da AWS.
 
-Ele coleta e exibe métricas, logs e eventos para acompanhar o funcionamento dos recursos e aplicações.
+Ele coleta e exibe métricas, logs, alarmes e eventos para acompanhar o funcionamento dos recursos e aplicações.
 
 ---
 
@@ -22,7 +22,7 @@ Ele coleta e exibe métricas, logs e eventos para acompanhar o funcionamento dos
 - Serviços AWS enviam métricas automaticamente
 - Você pode enviar métricas customizadas
 - O CloudWatch armazena logs e dados
-- Com base nesses dados, você pode criar alarmes e ações
+- Com base nesses dados, você pode criar gráficos, alarmes e ações
 
 ---
 
@@ -45,8 +45,8 @@ Ele coleta e exibe métricas, logs e eventos para acompanhar o funcionamento dos
 
 ### ⏰ Alarmes (Alarms)
 - Disparam ações com base em condições
-- Exemplo:
-  - CPU > 80% → enviar alerta
+  - Exemplo: uso da CPU > 80% → enviar alerta
+- É possível configurar para receber uma notificação sempre que um alarme for acionado
 
 ---
 
@@ -57,8 +57,11 @@ Ele coleta e exibe métricas, logs e eventos para acompanhar o funcionamento dos
 ---
 
 ### 📊 Dashboards
+<img width="923" height="469" alt="image" src="https://github.com/user-attachments/assets/f7d3121d-0162-4f69-995a-92492be377da" />
+
 - Painéis visuais com métricas
 - Ajuda a visualizar o estado do sistema
+- É possível personalizar painéis separados para diferentes fins comerciais, aplicativos ou recursos
 
 ---
 
