@@ -4,10 +4,10 @@
 
 O AWS Trusted Advisor é uma ferramenta que fornece **recomendações em tempo real** para ajudar a otimizar sua conta AWS.
 
-Ele analisa o ambiente e sugere melhorias em:
-- Custos
+Ele analisa o ambiente e sugere melhorias em cinco categorias:
+- Otimização de custos
+- Desempenho
 - Segurança
-- Performance
 - Tolerância a falhas
 - Limites de serviço
 
@@ -29,6 +29,17 @@ Ele analisa o ambiente e sugere melhorias em:
 - Exibe recomendações organizadas por categoria
 
 ---
+
+## 📊 Painel do AWS Trusted Advisor
+<img width="895" height="200" alt="image" src="https://github.com/user-attachments/assets/7c866e92-abc9-4201-b020-5eb31004e054" />
+
+- Exibe informações sobre as 5 categorias citadas
+- Para cada categoria:
+  - A marca de verificação verde indica o número de itens para os quais nenhum problema foi detectado
+  - O triângulo laranja representa o número de investigações recomendadas
+  - O círculo vermelho representa o número de ações recomendadas
+
+--- 
 
 ## 📦 Categorias de análise
 
