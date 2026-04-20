@@ -4,25 +4,28 @@
 
 A precificação na AWS é baseada no modelo **pay-as-you-go (pague pelo uso)**.
 
-Você paga apenas pelos recursos que utiliza, sem necessidade de investimento inicial.
+Você paga apenas pelos recursos que utiliza, sem necessidade de investimento inicial ou contratos obrigatórios.
 
 ---
 
-## 🎯 Quando entender isso é importante
+## 🎯 Por que isso é importante
 
 - Controlar custos na nuvem
 - Escolher o modelo de cobrança adequado
-- Evitar surpresas na fatura
+- Evitar gastos desnecessários
+- Otimizar recursos
 
 ---
 
 ## ⚙️ Como funciona
 
-- Cada serviço tem seu próprio modelo de cobrança
-- Os custos são baseados em:
-  - Tempo de uso
-  - Quantidade de recursos
-  - Transferência de dados
+Os custos na AWS são baseados principalmente em:
+
+- Tempo de uso dos recursos
+- Quantidade de recursos consumidos
+- Armazenamento utilizado
+- Transferência de dados (data transfer)
+- Região onde o serviço está hospedado
 
 ---
 
@@ -31,14 +34,15 @@ Você paga apenas pelos recursos que utiliza, sem necessidade de investimento in
 ### ⏱️ On-Demand (Sob demanda)
 - Paga apenas pelo uso
 - Sem compromisso
+- Alta flexibilidade
 - Mais caro a longo prazo
 
 ---
 
 ### 📉 Reserved Instances (Reservado)
 - Compromisso de 1 ou 3 anos
-- Desconto significativo
-- Ideal para uso contínuo
+- Descontos significativos
+- Ideal para cargas previsíveis
 
 ---
 
@@ -50,54 +54,30 @@ Você paga apenas pelos recursos que utiliza, sem necessidade de investimento in
 ---
 
 ### 🧩 Savings Plans
-- Compromisso de uso (por hora)
-- Flexível
+- Compromisso de uso por hora
+- Mais flexível que Reserved Instances
 - Desconto automático
 
 ---
 
-## 💸 Fatores que impactam custo
+## 💸 Fatores que impactam o custo
 
-- Tipo de instância (CPU, memória)
+- Tipo de recurso (CPU, memória, storage)
 - Tempo de execução
-- Armazenamento utilizado
-- Transferência de dados (data transfer)
-- Região da AWS
+- Volume de dados armazenados
+- Transferência de dados (entrada e saída)
+- Região da AWS (preços variam)
 
 ---
 
-## 🛠️ Ferramentas de controle de custos
-
-### 📊 AWS Cost Explorer
-- Visualização de gastos
-- Análise de tendências
-
----
-
-### 🧾 AWS Billing Dashboard
-- Visão geral da fatura
-- Detalhamento de custos
-
----
-
-### 🚨 AWS Budgets
-- Define limites de gastos
-- Envia alertas
-
----
-
-### 🧮 AWS Pricing Calculator
-- Estimativa de custos antes de usar
-
----
-
-## 🚀 Boas práticas
+## 🚀 Boas práticas para economizar
 
 - Desligar recursos não utilizados
-- Usar Auto Scaling
-- Escolher regiões mais baratas
-- Monitorar constantemente os custos
-- Utilizar instâncias reservadas quando possível
+- Utilizar Auto Scaling
+- Escolher regiões com menor custo
+- Usar instâncias reservadas para uso contínuo
+- Avaliar uso de Spot Instances
+- Monitorar constantemente os gastos
 
 ---
 
@@ -115,10 +95,11 @@ Você paga apenas pelos recursos que utiliza, sem necessidade de investimento in
 
 ## 🧠 Conceitos importantes para prova
 
-- AWS usa pay-as-you-go
-- Spot é mais barato, porém instável
+- AWS usa modelo pay-as-you-go
+- Custos variam por uso e região
+- Spot é mais barato, mas pode ser interrompido
 - Reserved oferece desconto com compromisso
-- Custos variam por região
+- Savings Plans são mais flexíveis que Reserved
 
 ---
 
@@ -127,22 +108,23 @@ Você paga apenas pelos recursos que utiliza, sem necessidade de investimento in
 - Esquecer de desligar recursos
 - Ignorar custo de transferência de dados
 - Escolher modelo errado de instância
-- Não monitorar gastos
+- Achar que tudo na AWS é barato automaticamente
+- Confundir ferramentas de custo com modelos de precificação
 
 ---
 
 ## 🔁 Resumo rápido
 
-- Pague pelo uso
-- Diferentes modelos de cobrança
-- Custos variam por uso e região
-- Monitoramento é essencial
+- Pague apenas pelo uso
+- Existem diferentes modelos de cobrança
+- Custos variam por uso, tipo e região
+- Planejamento e monitoramento são essenciais
 
 ---
 
 ## 📌 Status de aprendizado
 
-- [ ] Entendo modelos de precificação
-- [ ] Sei diferença entre On-Demand, Reserved e Spot
-- [ ] Conheço ferramentas de custo
+- [ ] Entendo modelo pay-as-you-go
+- [ ] Sei diferença entre On-Demand, Reserved, Spot e Savings Plans
+- [ ] Entendo fatores que impactam custo
 - [ ] Sei boas práticas para economizar
