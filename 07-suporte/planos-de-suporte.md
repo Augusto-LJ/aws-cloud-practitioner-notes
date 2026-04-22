@@ -20,74 +20,117 @@ Cada plano possui diferentes níveis de suporte, tempo de resposta e recursos.
 ## 📦 Tipos de planos
 
 ### 🆓 Basic (Básico)
-- Gratuito
-- Suporte limitado
-- Acesso a:
-  - Documentação
-  - Fóruns
-  - AWS Trusted Advisor (limitado)
-
----
-
-### 💼 Developer
-- Suporte para desenvolvimento e testes
-- Suporte por e-mail
-- Tempo de resposta:
-  - 24h (problemas gerais)
-
----
-
-### 🏢 Business
-- Para ambientes em produção
-- Suporte 24/7
-- Acesso por chat, e-mail e telefone
-- Tempo de resposta:
-  - 1h (problemas críticos)
-
----
-
-### 🚀 Enterprise
-- Suporte completo e personalizado
+- Gratuito para todos os clientes
+- **Não inclui suporte técnico para problemas de sistema**
 - Inclui:
-  - Technical Account Manager (TAM)
-  - Suporte arquitetural
-  - Respostas mais rápidas
+  - Whitepapers
+  - Documentação
+  - Comunidades de suporte
+  - Suporte para **cobrança e aumento de limites**
+  - AWS Trusted Advisor (limitado)
+  - AWS Personal Health Dashboard
+
+👉 Ideal para aprendizado e uso básico
 
 ---
 
-## ⏱️ Tempo de resposta (resumo)
-
-| Plano | Tempo de resposta |
-|------|------------------|
-| Basic | Não possui suporte técnico |
-| Developer | ~24h |
-| Business | ~1h |
-| Enterprise | ~15 min |
+> Todos os planos abaixo incluem os benefícios do Basic e permitem abrir **casos ilimitados de suporte técnico**.
 
 ---
 
-## 🧠 Conceitos importantes
+### 💼 Developer (Desenvolvedor)
+- Indicado para **desenvolvimento e testes**
+- Suporte por e-mail
+- Inclui:
+  - Orientação de boas práticas
+  - Ferramentas de diagnóstico
+  - Suporte à arquitetura de blocos fundamentais
 
-### 👨‍💼 TAM (Technical Account Manager)
-- Especialista da AWS dedicado (Enterprise)
-- Ajuda com arquitetura e otimização
-
----
-
-### 📊 AWS Trusted Advisor
-- Ferramenta que sugere melhorias em:
-  - Custos
-  - Segurança
-  - Performance
-- Mais completo em planos pagos
+⏱️ Tempo de resposta:
+- ~24 horas (problemas gerais)
 
 ---
 
-## 🚀 Casos de uso
+### 🏢 Business (Empresarial)
+- Indicado para **ambientes em produção**
+- Suporte 24/7
+- Contato via chat, e-mail e telefone
 
-- Empresas em produção → Business ou Enterprise
-- Projetos pessoais → Basic ou Developer
-- Sistemas críticos → Enterprise
+Inclui:
+- Orientação de caso de uso
+- **Todas as verificações do Trusted Advisor**
+- Suporte limitado a software de terceiros
+
+⏱️ Tempo de resposta:
+- ~1 hora (problemas críticos)
+
+---
+
+### ⚡ Enterprise On-Ramp (Empresarial Rápido)
+- Intermediário entre Business e Enterprise
+- Inclui tudo do Business + recursos adicionais
+
+Inclui:
+- Acesso a um **grupo de TAMs (Technical Account Managers)**
+- Suporte Concierge (conta e faturamento)
+- Oficina de otimização de custos (1x por ano)
+- Monitoramento via Trusted Advisor e Health Dashboard
+- Serviços proativos:
+  - Revisão de arquitetura
+  - Gerenciamento de eventos
+  - Automação de suporte
+
+⏱️ Tempo de resposta:
+- ~30 minutos (problemas críticos)
+
+---
+
+### 🚀 Enterprise (Empresarial de Grande Porte)
+- Suporte mais completo
+- Indicado para **sistemas críticos (missão crítica)**
+
+Inclui:
+- **TAM dedicado**
+- Suporte Concierge
+- Análises operacionais
+- Treinamentos e suporte à inovação
+- Monitoramento avançado
+
+Serviços proativos completos:
+- Revisão de arquitetura
+- Gerenciamento de eventos
+- Otimização de custos
+- Automação de suporte
+
+⏱️ Tempo de resposta:
+- ~15 minutos (problemas críticos)
+
+---
+
+## 👨‍💼 Technical Account Manager (TAM)
+
+- Especialista da AWS que atua como **ponto de contato principal**
+- Disponível nos planos:
+  - Enterprise On-Ramp (grupo de TAMs)
+  - Enterprise (TAM dedicado)
+
+### 📌 O que o TAM faz
+
+- Ajuda a projetar arquiteturas
+- Orienta boas práticas
+- Apoia otimização de custos
+- Conecta você a especialistas da AWS
+- Acompanha sua jornada na nuvem
+
+---
+
+## 📊 AWS Personal Health Dashboard
+
+- Mostra eventos que afetam seus recursos
+- Fornece:
+  - Alertas
+  - Diagnóstico
+  - Orientações de correção
 
 ---
 
@@ -98,7 +141,8 @@ Cada plano possui diferentes níveis de suporte, tempo de resposta e recursos.
 | Basic | Developer |
 |------|-----------|
 | Gratuito | Pago |
-| Sem suporte técnico direto | Suporte por e-mail |
+| Sem suporte técnico | Suporte por e-mail |
+| Autoatendimento | Suporte inicial |
 
 ---
 
@@ -106,42 +150,63 @@ Cada plano possui diferentes níveis de suporte, tempo de resposta e recursos.
 
 | Business | Enterprise |
 |----------|------------|
-| Suporte completo | Suporte avançado |
-| Sem TAM dedicado | Com TAM |
-| Bom para produção | Ideal para missão crítica |
+| Produção | Missão crítica |
+| Sem TAM dedicado | TAM dedicado |
+| Suporte completo | Suporte premium |
+
+---
+
+### Enterprise On-Ramp vs Enterprise
+
+| On-Ramp | Enterprise |
+|--------|-----------|
+| TAM compartilhado | TAM dedicado |
+| Recursos intermediários | Recursos completos |
+| Mais acessível | Mais caro |
 
 ---
 
 ## 🧠 Conceitos importantes para prova
 
-- Existem 4 planos de suporte
-- Basic é gratuito
-- Enterprise possui TAM
-- Business e Enterprise têm suporte 24/7
+- Existem **5 planos**:
+  - Basic
+  - Developer
+  - Business
+  - Enterprise On-Ramp
+  - Enterprise
+
+- Basic é gratuito e não tem suporte técnico
+- Business e acima têm suporte 24/7
+- Enterprise e On-Ramp têm TAM
+- Enterprise tem TAM dedicado
+- Trusted Advisor completo só em planos pagos
 
 ---
 
 ## ⚠️ Pegadinhas comuns
 
-- Achar que o plano Basic tem suporte técnico direto
-- Confundir tempos de resposta
+- Achar que Basic tem suporte técnico
+- Confundir Enterprise com Business
 - Não saber o que é TAM
-- Ignorar Trusted Advisor
+- Ignorar Enterprise On-Ramp (novo e pode cair)
+- Confundir suporte com monitoramento
 
 ---
 
 ## 🔁 Resumo rápido
 
-- 4 planos: Basic, Developer, Business, Enterprise
-- Diferença principal: nível de suporte
-- Enterprise é o mais completo
-- Basic é gratuito
+- 5 planos de suporte
+- Basic = gratuito
+- Developer = desenvolvimento
+- Business = produção
+- On-Ramp = intermediário com TAM
+- Enterprise = completo com TAM dedicado
 
 ---
 
 ## 📌 Status de aprendizado
 
-- [ ] Sei quais são os planos de suporte
+- [ ] Sei os planos de suporte
 - [ ] Entendo diferenças entre eles
 - [ ] Sei o que é TAM
 - [ ] Conheço tempos de resposta
