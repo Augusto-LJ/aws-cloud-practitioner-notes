@@ -26,6 +26,7 @@ Ele ajuda a identificar padrões de consumo e oportunidades de economia.
 ---
 
 ## 📦 Funcionalidades principais
+<img width="919" height="693" alt="image" src="https://github.com/user-attachments/assets/ee91b0ca-0aaa-427d-833c-599c090be0fc" />
 
 ### 📈 Visualização de custos
 - Gráficos ao longo do tempo
