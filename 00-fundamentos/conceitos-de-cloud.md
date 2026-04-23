@@ -8,39 +8,41 @@ Em vez de comprar e manter servidores físicos, você utiliza infraestrutura, ar
 
 ---
 
-## 🎯 Vantagens da Computação em Nuvem
+## 🎯 Benefícios da Computação em Nuvem
 
-### 1. Trocar CapEx por OpEx
-- **CapEx (Capital Expenditure)**: investimento inicial alto (servidores físicos)
-- **OpEx (Operational Expenditure)**: pagamento conforme uso
-
-👉 Você paga apenas pelo que consumir
+### 1. Troque despesas iniciais por despesas variáveis
+- Despesas iniciais são data centers, servidores físicos e outros recursos nos quais você precisaria investir antes de usá-los
+- Em vez de investir substancialmente em data centers e servidores antes de saber como serão usados, você pode pagar somente ao consumir recursos de computação.
 
 ---
 
-### 2. Escalabilidade sob demanda
-- Aumente ou reduza recursos rapidamente
-- Exemplo: lidar com picos de acesso sem precisar prever capacidade
+### 2. Beneficie-se de grandes economias de escala
+- O uso da computação em nuvem permite obter um custo variável menor ao que você conseguiria por conta própria
+- As economias de escala se transformam em preços para pagamento conforme o uso mais baixos.
+---
+
+### 3. Pare de tentar adivinhar a capacidade
+- Com a computação em nuvem, você não precisa prever a capacidade de infraestrutura necessária antes de implantar uma aplicação
+- Por exemplo, você pode iniciar instâncias do Amazon EC2 quando necessário e pagar apenas pelo tempo de computação usado.
+- Em vez de pagar por recursos que não são utilizados ou lidar com capacidade limitada, você pode acessar somente a capacidade de que precisa e aumentar ou reduzir a quantidade em resposta à demanda. 
 
 ---
 
-### 3. Alta disponibilidade
-- Infraestrutura distribuída globalmente
-- Menor risco de downtime
+### 4. Aumente a velocidade e a agilidade
+- A flexibilidade da computação em nuvem facilita o desenvolvimento e a implantação de aplicações
+- Essa flexibilidade também oferece às suas equipes de desenvolvimento mais tempo para experimentar e inovar
 
 ---
 
-### 4. Velocidade e agilidade
-- Provisionamento em minutos
-- Não precisa comprar hardware
+### 5. Pare de gastar dinheiro com execução e manutenção de data centers
+- A computação em nuvem em data centers geralmente exige que você gaste mais dinheiro e tempo gerenciando infraestrutura e servidores
+- Um benefício da computação em nuvem é poder se concentrar menos nessas tarefas e mais nas aplicações e clientes.
 
 ---
 
-### 5. Economia de escala
-- AWS tem custo menor por operar em grande escala
-- Repasse de economia para o cliente
-
----
+### 6. Tenha alcance global em minutos
+- O espaço global da nuvem AWS para implantação rápida de aplicações para clientes em todo o mundo, ao mesmo tempo em que oferece baixa latência.
+- É possível replicar uma aplicação em outro país em questão de minutos, por exemplo
 
 ## 🏗️ Modelos de Serviço (Service Models)
 
