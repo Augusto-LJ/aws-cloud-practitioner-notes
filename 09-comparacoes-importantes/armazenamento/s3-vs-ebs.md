@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [S3](01-principais-servicos/armazenamento/s3.md)
-- [EBS](01-principais-servicos/armazenamento/ebs.md)
+- [S3](../../01-principais-servicos/armazenamento/s3.md)
+- [EBS](../../01-principais-servicos/armazenamento/ebs.md)
 
 ---
 
