@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [Auto Scaling](../04-escalabilidade-e-alta-disponibilidade/amazon-ec2-autoscaling.md)
-- [ELB](../04-escalabilidade-e-alta-disponibilidade/elb.md)
+- [Auto Scaling](../../04-escalabilidade-e-alta-disponibilidade/amazon-ec2-autoscaling.md)
+- [ELB](../../04-escalabilidade-e-alta-disponibilidade/elb.md)
 
 ---
 
