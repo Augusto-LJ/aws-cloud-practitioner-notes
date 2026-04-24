@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [ECS](../01-principais-servicos/computacao/ecs.md)
-- [Fargate](../01-principais-servicos/computacao/fargate.md)
+- [ECS](../../01-principais-servicos/computacao/ecs.md)
+- [Fargate](../../01-principais-servicos/computacao/fargate.md)
 
 ---
 
