@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [EKS](../01-principais-servicos/computacao/eks.md)
-- [Fargate](../01-principais-servicos/computacao/fargate.md)
+- [EKS](../../01-principais-servicos/computacao/eks.md)
+- [Fargate](../../01-principais-servicos/computacao/fargate.md)
 
 ---
 
