@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [ECS](../01-principais-servicos/computacao/ecs.md)
-- [EKS](../01-principais-servicos/computacao/eks.md)
+- [ECS](../../01-principais-servicos/computacao/ecs.md)
+- [EKS](../../01-principais-servicos/computacao/eks.md)
 
 ---
 
