@@ -2,8 +2,8 @@
 
 ## 🔗 Referências
 
-- [Lambda](../01-principais-servicos/computacao/lambda.md)
-- [EC2](../01-principais-servicos/computacao/ec2.md)
+- [Lambda](../../01-principais-servicos/computacao/lambda.md)
+- [EC2](../../01-principais-servicos/computacao/ec2.md)
 
 ---
 
