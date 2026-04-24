@@ -2,7 +2,7 @@
 
 ## 🔗 Referências
 
-- [Redshift](../../01-principais-servicos/banco-de-dados/redshift.md)
+- [Redshift](../../01-principais-servicos/big-data/redshift.md)
 - [RDS](../../01-principais-servicos/banco-de-dados/rds.md)
 
 ---
