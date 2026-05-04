@@ -1,4 +1,4 @@
-# ☁️ AWS Cloud Practitioner (CLF-C02) - Guia de Estudos
+# ☁️ AWS Cloud Practitioner (CLF-C02) - Resumo dos conteúdos
 
 ## 🎯 Objetivo
 
