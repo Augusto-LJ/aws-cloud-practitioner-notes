@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulado AWS Certified Cloud Practitioner — CLF-C02 — 50 questões</title>
+<style>
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --text: #18212f;
+  --muted: #5c6878;
+  --line: #dbe2ea;
+  --accent: #6f42c1;
+  --accent2: #2c7be5;
+  --answer-bg: #f0fbf4;
+  --answer-line: #a8d8b5;
+  --shadow: 0 8px 24px rgba(20, 30, 50, .07);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+header { background: linear-gradient(135deg, #32205f, #5e3aa8); color: white; padding: 34px 20px 28px; }
+.header-inner { max-width: 1050px; margin: 0 auto; }
+h1 { margin: 0 0 8px; font-size: clamp(1.7rem, 4vw, 2.4rem); }
+.subtitle { margin: 0; opacity: .92; max-width: 850px; }
+.container { max-width: 1050px; margin: 24px auto 60px; padding: 0 16px; }
+.toolbar { position: sticky; top: 0; z-index: 10; background: rgba(244,247,251,.95); backdrop-filter: blur(8px); padding: 12px 0; border-bottom: 1px solid var(--line); display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+button { border: 1px solid #cfd7e2; background: white; color: var(--text); border-radius: 9px; padding: 9px 12px; cursor: pointer; font-weight: 650; }
+button:hover { border-color: var(--accent); }
+.status { margin-left:auto; color: var(--muted); font-size:.93rem; }
+.note { background:#fffaf0; border:1px solid #ead8a4; border-radius:12px; padding:14px 16px; margin:18px 0; }
+.grid { display:grid; gap:16px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:15px; box-shadow:var(--shadow); padding:20px; }
+.meta { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:10px; }
+.meta span { background:#eef2f7; color:#506070; border-radius:999px; padding:4px 8px; font-size:.78rem; font-weight:700; }
+.card h2 { font-size:1.08rem; margin:0 0 14px; }
+ol.options { margin:0 0 16px 20px; padding-left:20px; }
+ol.options li { margin:8px 0; padding-left:4px; }
+.answer { border:1px dashed var(--answer-line); border-radius:11px; overflow:hidden; }
+.answer summary { cursor:pointer; padding:10px 12px; font-weight:800; background:#f8fffa; }
+.answer-body { background:var(--answer-bg); padding:12px 14px; border-top:1px solid var(--answer-line); }
+.answer-body p { margin:5px 0; }
+footer { color:var(--muted); font-size:.9rem; margin-top:24px; }
+a { color:var(--accent2); }
+@media (max-width:700px) { .status { width:100%; margin-left:0; } .card { padding:16px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>☁️ AWS Certified Cloud Practitioner — CLF-C02</h1>
+    <p class="subtitle">Simulado com 50 questões autorais, alinhado ao guia oficial CLF-C02 vigente em novembro de 2026. As respostas ficam ocultas até você clicar em “Revelar resposta”.</p>
+  </div>
+</header>
+<div class="container">
+  <div class="note">
+    <strong>Como usar:</strong> responda antes de revelar a solução. A distribuição segue aproximadamente a ponderação oficial dos domínios: 12 / 15 / 17 / 6 questões (24% / 30% / 34% / 12%). O simulado inclui múltipla escolha, múltipla resposta, correspondência e associação.
+    <br><br>
+    <strong>Importante:</strong> na prova oficial, os formatos são múltipla escolha (uma resposta) e múltipla resposta (duas ou mais respostas). Correspondência e ordenação foram incluídas aqui como exercícios extras de revisão, não como formatos oficiais. As questões são autorais e não reproduzem questões reais ou dumps.
+  </div>
+  <div class="toolbar">
+    <button onclick="toggleAll(true)">Revelar todas</button>
+    <button onclick="toggleAll(false)">Ocultar todas</button>
+    <span class="status" id="status">0/50 respostas reveladas</span>
+  </div>
+  <main class="grid">
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 1</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>1. Uma empresa substitui grandes investimentos iniciais em data centers por pagamentos conforme o consumo. Qual benefício da nuvem isso representa?</h2>
+  <ol class="options" type="A"><li>Troca de despesas de capital (CapEx) por despesas variáveis (OpEx)</li>
+<li>Eliminação de todos os custos operacionais</li>
+<li>Aumento da capacidade ociosa obrigatória</li>
+<li>Dependência de contratos de hardware de longo prazo</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> O modelo sob demanda reduz a necessidade de investimento inicial e transforma parte dos custos em despesas variáveis conforme o uso.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 2</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>2. Uma aplicação recebe picos imprevisíveis de acesso. A empresa deseja adicionar e remover recursos automaticamente conforme a demanda. Qual conceito descreve melhor essa capacidade?</h2>
+  <ol class="options" type="A"><li>Elasticidade</li>
+<li>Alta durabilidade</li>
+<li>Governança</li>
+<li>Conformidade</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Elasticidade ajusta recursos dinamicamente à demanda, aumentando e reduzindo capacidade conforme necessário.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 3</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>3. Qual é uma vantagem de implantar uma aplicação em várias zonas de disponibilidade (AZs) de uma região?</h2>
+  <ol class="options" type="A"><li>Reduzir o risco de indisponibilidade causada pela falha de uma única AZ</li>
+<li>Garantir que todos os dados fiquem em uma única instalação</li>
+<li>Eliminar a necessidade de backups</li>
+<li>Tornar a aplicação automaticamente global</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AZs são isoladas entre si dentro de uma região. Distribuir recursos entre AZs melhora a disponibilidade e a tolerância a falhas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 4</span><span>Múltipla resposta</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>4. Quais são benefícios típicos da AWS Cloud? (Selecione DUAS.)</h2>
+  <ol class="options" type="A"><li>Agilidade para provisionar recursos</li>
+<li>Pagamento antecipado obrigatório por toda a capacidade máxima</li>
+<li>Economias de escala</li>
+<li>Responsabilidade total da AWS por todos os dados do cliente</li>
+<li>Necessidade de comprar hardware para cada pico</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A e C</p>
+      <p><strong>Explicação:</strong> A nuvem permite provisionamento rápido e aproveita economias de escala da AWS, que podem reduzir custos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 5</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>5. Uma empresa deseja migrar aplicações legadas gradualmente, mantendo alguns sistemas no data center e conectando-os a recursos AWS. Qual modelo de implantação atende a esse cenário?</h2>
+  <ol class="options" type="A"><li>Híbrido</li>
+<li>Somente baseado na nuvem</li>
+<li>Somente on-premises</li>
+<li>Edge isolado</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> O modelo híbrido conecta recursos em nuvem à infraestrutura on-premises, permitindo coexistência e migração gradual.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 6</span><span>Correspondência</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>6. Associe o conceito de nuvem à descrição correspondente: 1. Agilidade; 2. Elasticidade; 3. Alta disponibilidade. a. Ajustar capacidade à demanda; b. Reduzir o tempo para experimentar e provisionar; c. Manter o serviço acessível apesar de falhas.</h2>
+  <ol class="options" type="A"><li>1 → b; 2 → a; 3 → c</li>
+<li>1 → a; 2 → c; 3 → b</li>
+<li>1 → c; 2 → b; 3 → a</li>
+<li>1 → b; 2 → c; 3 → a</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Agilidade acelera provisionamento e experimentação; elasticidade ajusta capacidade; alta disponibilidade busca manter o serviço operacional.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 7</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>7. Qual princípio do AWS Well-Architected Framework está mais diretamente relacionado à capacidade de recuperar-se de falhas e atender à demanda?</h2>
+  <ol class="options" type="A"><li>Confiabilidade</li>
+<li>Excelência operacional</li>
+<li>Sustentabilidade</li>
+<li>Otimização de custos</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Confiabilidade abrange recuperação de falhas, arquitetura distribuída e capacidade de atender à demanda.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 8</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>8. Uma organização quer avaliar sua prontidão para adoção da nuvem considerando pessoas, processos e tecnologia. Qual framework da AWS oferece perspectivas para essa transformação?</h2>
+  <ol class="options" type="A"><li>AWS Cloud Adoption Framework (AWS CAF)</li>
+<li>AWS Well-Architected Tool</li>
+<li>AWS Artifact</li>
+<li>AWS Pricing Calculator</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> O AWS CAF orienta a transformação para a nuvem por meio de perspectivas organizacionais, incluindo negócio, pessoas, governança, plataforma, segurança e operações.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 9</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>9. Uma empresa quer transferir uma aplicação para a AWS com poucas ou nenhuma alteração no código. Qual estratégia de migração é mais adequada?</h2>
+  <ol class="options" type="A"><li>Rehost (lift and shift)</li>
+<li>Refactor</li>
+<li>Retire</li>
+<li>Repurchase</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Rehost consiste em mover a aplicação como está, com alterações mínimas, para acelerar a migração.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 10</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>10. Qual opção descreve corretamente uma região da AWS?</h2>
+  <ol class="options" type="A"><li>Uma área geográfica que contém várias zonas de disponibilidade</li>
+<li>Um único data center</li>
+<li>Uma rede privada criada por um cliente</li>
+<li>Um ponto de presença usado apenas para DNS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Uma região é uma área geográfica separada que contém múltiplas AZs isoladas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 11</span><span>Múltipla resposta</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>11. Quais afirmações sobre zonas de disponibilidade (AZs) estão corretas? (Selecione DUAS.)</h2>
+  <ol class="options" type="A"><li>Cada região possui uma ou mais AZs</li>
+<li>Uma AZ pode conter um ou mais data centers</li>
+<li>Todas as AZs de uma região compartilham obrigatoriamente a mesma falha elétrica</li>
+<li>AZs são sinônimo de regiões</li>
+<li>Uma AZ é sempre um ponto de presença do CloudFront</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A e B</p>
+      <p><strong>Explicação:</strong> Uma AZ é composta por um ou mais data centers com infraestrutura redundante e isolada; uma região contém várias AZs.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 1 — Conceitos da nuvem">
+  <div class="meta"><span>Questão 12</span><span>Múltipla escolha</span><span>Domínio 1 — Conceitos da nuvem</span></div>
+  <h2>12. Uma equipe precisa executar processamento em locais próximos aos usuários para reduzir latência, inclusive fora das regiões AWS tradicionais. Qual conceito é mais relacionado?</h2>
+  <ol class="options" type="A"><li>Computação de borda (edge computing)</li>
+<li>Cobrança consolidada</li>
+<li>Instância reservada</li>
+<li>Banco relacional</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Edge computing aproxima processamento e entrega de conteúdo dos usuários ou dispositivos, reduzindo latência.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 13</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>13. No modelo de responsabilidade compartilhada, quem é responsável por configurar corretamente as regras de grupos de segurança de uma instância EC2?</h2>
+  <ol class="options" type="A"><li>Cliente</li>
+<li>AWS</li>
+<li>Provedor de internet</li>
+<li>Fabricante do sistema operacional, exclusivamente</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> A AWS protege a infraestrutura da nuvem; o cliente configura controles no sistema operacional, aplicações, dados e regras de rede sob seu controle.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 14</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>14. Qual responsabilidade pertence à AWS no modelo de responsabilidade compartilhada?</h2>
+  <ol class="options" type="A"><li>Segurança física dos data centers</li>
+<li>Classificação dos dados do cliente</li>
+<li>Gerenciamento das credenciais dos usuários do cliente</li>
+<li>Configuração das permissões IAM do cliente</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> A segurança física e a infraestrutura subjacente dos data centers são responsabilidades da AWS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 15</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>15. Qual serviço permite criar usuários, grupos, funções e políticas para controlar acesso aos recursos AWS?</h2>
+  <ol class="options" type="A"><li>AWS IAM</li>
+<li>AWS CloudTrail</li>
+<li>Amazon Inspector</li>
+<li>AWS Artifact</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> IAM gerencia identidades e permissões, permitindo controlar quem pode realizar quais ações em quais recursos.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 16</span><span>Múltipla resposta</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>16. Quais práticas ajudam a proteger uma conta AWS? (Selecione DUAS.)</h2>
+  <ol class="options" type="A"><li>Habilitar MFA para usuários privilegiados e para o usuário root</li>
+<li>Compartilhar as credenciais do usuário root entre a equipe</li>
+<li>Aplicar o princípio do menor privilégio</li>
+<li>Usar a mesma senha em todas as contas</li>
+<li>Desabilitar logs de auditoria</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A e C</p>
+      <p><strong>Explicação:</strong> MFA adiciona uma camada de autenticação; menor privilégio concede apenas as permissões necessárias.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 17</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>17. Uma aplicação EC2 precisa acessar um bucket S3 sem armazenar chaves de acesso no código. Qual abordagem é recomendada?</h2>
+  <ol class="options" type="A"><li>Associar uma IAM role à instância</li>
+<li>Criar uma chave root e gravá-la no código</li>
+<li>Tornar o bucket público</li>
+<li>Desabilitar políticas do IAM</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Uma IAM role fornece credenciais temporárias à aplicação, evitando armazenar credenciais de longo prazo.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 18</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>18. Qual serviço registra chamadas de API e atividades realizadas na conta AWS para fins de auditoria?</h2>
+  <ol class="options" type="A"><li>AWS CloudTrail</li>
+<li>Amazon CloudWatch</li>
+<li>AWS Config</li>
+<li>Amazon GuardDuty</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> CloudTrail registra eventos de atividade da conta, incluindo chamadas de API. CloudWatch monitora métricas, logs e alarmes.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 19</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>19. Uma equipe quer detectar comportamento suspeito, como credenciais comprometidas e atividade potencialmente maliciosa. Qual serviço é o mais adequado?</h2>
+  <ol class="options" type="A"><li>Amazon GuardDuty</li>
+<li>Amazon Macie</li>
+<li>AWS Artifact</li>
+<li>AWS Shield</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> GuardDuty analisa continuamente sinais e fontes de dados para detectar ameaças no ambiente AWS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 20</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>20. Uma organização precisa identificar informações sensíveis, como dados pessoais, armazenadas em buckets Amazon S3. Qual serviço deve usar?</h2>
+  <ol class="options" type="A"><li>Amazon Macie</li>
+<li>Amazon Inspector</li>
+<li>AWS WAF</li>
+<li>AWS KMS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Macie ajuda a descobrir e proteger dados sensíveis no Amazon S3.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 21</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>21. Qual serviço ajuda a avaliar automaticamente vulnerabilidades em instâncias EC2, imagens de contêiner e funções Lambda suportadas?</h2>
+  <ol class="options" type="A"><li>Amazon Inspector</li>
+<li>Amazon GuardDuty</li>
+<li>AWS Trusted Advisor</li>
+<li>AWS Artifact</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Inspector realiza avaliações automatizadas de vulnerabilidades e exposição em recursos suportados.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 22</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>22. Uma empresa precisa gerenciar chaves criptográficas usadas por serviços e aplicações AWS. Qual serviço é apropriado?</h2>
+  <ol class="options" type="A"><li>AWS Key Management Service (KMS)</li>
+<li>AWS CloudTrail</li>
+<li>Amazon Cognito</li>
+<li>AWS Organizations</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> KMS permite criar e gerenciar chaves criptográficas e controlar seu uso.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 23</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>23. Uma aplicação web precisa filtrar requisições HTTP e bloquear padrões como SQL injection. Qual serviço deve ser considerado?</h2>
+  <ol class="options" type="A"><li>AWS WAF</li>
+<li>AWS Shield Standard</li>
+<li>AWS Direct Connect</li>
+<li>Amazon Inspector</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AWS WAF aplica regras de ACL web para permitir, bloquear ou monitorar requisições HTTP/HTTPS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 24</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>24. Qual serviço oferece proteção contra ataques DDoS na infraestrutura AWS, com proteção Standard ativada automaticamente para clientes?</h2>
+  <ol class="options" type="A"><li>AWS Shield</li>
+<li>AWS Secrets Manager</li>
+<li>AWS Certificate Manager</li>
+<li>Amazon Detective</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AWS Shield fornece proteção DDoS. O Shield Standard é incluído automaticamente; o Advanced oferece proteções e benefícios adicionais.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 25</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>25. Uma empresa deseja acessar relatórios de auditoria e certificações da AWS, além de consultar e aceitar contratos relacionados à conformidade. Qual serviço oferece esse acesso?</h2>
+  <ol class="options" type="A"><li>AWS Artifact</li>
+<li>AWS Audit Manager</li>
+<li>AWS Organizations</li>
+<li>AWS Config</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AWS Artifact disponibiliza relatórios de conformidade (Reports) e contratos (Agreements) da AWS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 26</span><span>Múltipla escolha</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>26. Uma organização quer aplicar políticas e administrar várias contas AWS de forma centralizada. Qual serviço é o mais indicado?</h2>
+  <ol class="options" type="A"><li>AWS Organizations</li>
+<li>AWS IAM Identity Center apenas</li>
+<li>Amazon Cognito</li>
+<li>AWS Artifact</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AWS Organizations permite agrupar e gerenciar contas, aplicar políticas de controle de serviço (SCPs) e consolidar faturamento.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 2 — Segurança e conformidade">
+  <div class="meta"><span>Questão 27</span><span>Correspondência</span><span>Domínio 2 — Segurança e conformidade</span></div>
+  <h2>27. Associe o serviço de segurança à sua função: 1. GuardDuty; 2. Macie; 3. Inspector; 4. KMS. a. Gerenciamento de chaves; b. Detecção de ameaças; c. Descoberta de dados sensíveis no S3; d. Avaliação de vulnerabilidades.</h2>
+  <ol class="options" type="A"><li>1 → b; 2 → c; 3 → d; 4 → a</li>
+<li>1 → c; 2 → b; 3 → a; 4 → d</li>
+<li>1 → d; 2 → a; 3 → c; 4 → b</li>
+<li>1 → b; 2 → d; 3 → c; 4 → a</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> GuardDuty detecta ameaças; Macie descobre dados sensíveis; Inspector avalia vulnerabilidades; KMS gerencia chaves criptográficas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 28</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>28. Uma empresa precisa de servidores virtuais com controle sobre sistema operacional, capacidade e configuração. Qual serviço deve escolher?</h2>
+  <ol class="options" type="A"><li>Amazon EC2</li>
+<li>AWS Lambda</li>
+<li>Amazon S3</li>
+<li>Amazon SQS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> EC2 fornece capacidade computacional redimensionável em instâncias virtuais, com controle sobre o ambiente.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 29</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>29. Uma equipe quer executar código em resposta a eventos sem provisionar ou administrar servidores. Qual serviço é o mais adequado?</h2>
+  <ol class="options" type="A"><li>AWS Lambda</li>
+<li>Amazon EC2</li>
+<li>Amazon EBS</li>
+<li>Amazon VPC</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Lambda executa código sob demanda em um modelo serverless, gerenciando a infraestrutura subjacente.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 30</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>30. Uma aplicação precisa armazenar imagens, vídeos e backups como objetos com alta durabilidade. Qual serviço é indicado?</h2>
+  <ol class="options" type="A"><li>Amazon S3</li>
+<li>Amazon EBS</li>
+<li>Amazon EFS</li>
+<li>Amazon RDS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> S3 é armazenamento de objetos, apropriado para arquivos, backups, conteúdo estático e grandes volumes de dados.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 31</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>31. Uma instância EC2 precisa de armazenamento em blocos persistente, semelhante a um disco conectado à instância. Qual serviço atende?</h2>
+  <ol class="options" type="A"><li>Amazon EBS</li>
+<li>Amazon S3</li>
+<li>Amazon EFS</li>
+<li>Amazon SQS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> EBS fornece volumes de armazenamento em blocos que podem ser anexados a instâncias EC2.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 32</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>32. Várias instâncias Linux precisam acessar simultaneamente um sistema de arquivos compartilhado. Qual serviço é mais adequado?</h2>
+  <ol class="options" type="A"><li>Amazon EFS</li>
+<li>Amazon EBS</li>
+<li>Amazon S3 Glacier Deep Archive</li>
+<li>Amazon DynamoDB</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> EFS é um sistema de arquivos gerenciado que pode ser montado simultaneamente por múltiplas instâncias.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 33</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>33. Uma aplicação utiliza banco de dados relacional e a equipe quer que a AWS gerencie tarefas como backups e aplicação de patches do serviço. Qual opção é apropriada?</h2>
+  <ol class="options" type="A"><li>Amazon RDS</li>
+<li>Amazon DynamoDB</li>
+<li>Amazon S3</li>
+<li>Amazon ElastiCache</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> RDS é um serviço gerenciado para bancos de dados relacionais, simplificando tarefas administrativas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 34</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>34. Uma aplicação precisa de um banco NoSQL gerenciado com baixa latência e escalabilidade. Qual serviço é o melhor encaixe?</h2>
+  <ol class="options" type="A"><li>Amazon DynamoDB</li>
+<li>Amazon RDS</li>
+<li>Amazon Redshift</li>
+<li>Amazon Aurora</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> DynamoDB é um banco NoSQL gerenciado, adequado a aplicações que exigem acesso rápido e escalabilidade.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 35</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>35. Uma empresa deseja executar consultas analíticas sobre grandes volumes de dados em um data warehouse. Qual serviço AWS é indicado?</h2>
+  <ol class="options" type="A"><li>Amazon Redshift</li>
+<li>Amazon DynamoDB</li>
+<li>Amazon RDS for MySQL</li>
+<li>Amazon EFS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Redshift é um serviço de data warehouse para análises e consultas sobre grandes conjuntos de dados.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 36</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>36. Qual serviço permite criar uma rede virtual isolada na AWS, com controle sobre sub-redes, rotas e gateways?</h2>
+  <ol class="options" type="A"><li>Amazon VPC</li>
+<li>Amazon Route 53</li>
+<li>AWS Direct Connect</li>
+<li>Amazon CloudFront</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> VPC fornece uma rede virtual logicamente isolada e configurável dentro da AWS.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 37</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>37. Uma aplicação precisa distribuir tráfego de entrada entre várias instâncias EC2 para melhorar disponibilidade e escalabilidade. Qual serviço é apropriado?</h2>
+  <ol class="options" type="A"><li>Elastic Load Balancing (ELB)</li>
+<li>AWS CloudTrail</li>
+<li>Amazon Route 53 Resolver</li>
+<li>AWS Snowball</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> ELB distribui automaticamente tráfego entre destinos, como instâncias EC2, em uma ou mais zonas de disponibilidade.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 38</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>38. Uma aplicação precisa aumentar ou reduzir automaticamente o número de instâncias EC2 conforme métricas e demanda. Qual serviço atende?</h2>
+  <ol class="options" type="A"><li>Amazon EC2 Auto Scaling</li>
+<li>AWS Artifact</li>
+<li>Amazon Inspector</li>
+<li>AWS Budgets</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> EC2 Auto Scaling ajusta automaticamente a capacidade computacional conforme políticas e condições definidas.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 39</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>39. Uma empresa quer acelerar a entrega de conteúdo estático e dinâmico para usuários globalmente, usando pontos de presença. Qual serviço deve usar?</h2>
+  <ol class="options" type="A"><li>Amazon CloudFront</li>
+<li>Amazon VPC</li>
+<li>AWS Direct Connect</li>
+<li>Amazon RDS</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> CloudFront é uma CDN que entrega conteúdo por meio de uma rede global de pontos de presença.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 40</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>40. Qual serviço traduz nomes de domínio, como exemplo.com, em endereços IP e oferece roteamento DNS?</h2>
+  <ol class="options" type="A"><li>Amazon Route 53</li>
+<li>Amazon CloudFront</li>
+<li>AWS Transit Gateway</li>
+<li>Amazon API Gateway</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Route 53 é o serviço DNS gerenciado da AWS, com registro de domínios e políticas de roteamento.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 41</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>41. Uma equipe deseja acompanhar métricas, centralizar logs e configurar alarmes para recursos AWS. Qual serviço deve utilizar?</h2>
+  <ol class="options" type="A"><li>Amazon CloudWatch</li>
+<li>AWS CloudTrail</li>
+<li>AWS Config</li>
+<li>Amazon GuardDuty</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> CloudWatch coleta e monitora métricas, logs e eventos operacionais, além de permitir alarmes.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 42</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>42. Uma aplicação precisa enviar uma mensagem para uma fila para que consumidores processem o trabalho de forma desacoplada. Qual serviço é apropriado?</h2>
+  <ol class="options" type="A"><li>Amazon SQS</li>
+<li>Amazon SNS</li>
+<li>Amazon EventBridge</li>
+<li>Amazon Route 53</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> SQS é um serviço de filas que desacopla produtores e consumidores e permite processamento assíncrono.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 43</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>43. Uma aplicação precisa publicar uma notificação que será entregue a vários assinantes por diferentes protocolos. Qual serviço é o mais adequado?</h2>
+  <ol class="options" type="A"><li>Amazon SNS</li>
+<li>Amazon SQS</li>
+<li>Amazon EBS</li>
+<li>AWS Glue</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> SNS é um serviço pub/sub que distribui mensagens para múltiplos assinantes, como endpoints, filas e e-mail.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 3 — Tecnologia e serviços da nuvem">
+  <div class="meta"><span>Questão 44</span><span>Múltipla escolha</span><span>Domínio 3 — Tecnologia e serviços da nuvem</span></div>
+  <h2>44. Uma empresa deseja migrar grandes volumes de dados para a AWS usando dispositivos físicos enviados entre seus locais e a AWS. Qual família de serviços atende?</h2>
+  <ol class="options" type="A"><li>AWS Snow Family</li>
+<li>AWS Direct Connect</li>
+<li>Amazon CloudFront</li>
+<li>AWS DataSync exclusivamente</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> A Snow Family oferece dispositivos físicos para migração e processamento de dados em cenários com conectividade limitada ou grandes volumes.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 45</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>45. Uma equipe quer estimar o custo mensal de uma arquitetura AWS antes de implantá-la, selecionando serviços e configurações. Qual ferramenta deve usar?</h2>
+  <ol class="options" type="A"><li>AWS Pricing Calculator</li>
+<li>AWS Cost Explorer</li>
+<li>AWS Budgets</li>
+<li>AWS Artifact</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> A Pricing Calculator estima custos previstos antes da implantação, com base nos serviços e configurações informados.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 46</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>46. Um gerente deseja visualizar custos históricos por serviço, região e conta, além de analisar tendências. Qual ferramenta é mais adequada?</h2>
+  <ol class="options" type="A"><li>AWS Cost Explorer</li>
+<li>AWS Budgets</li>
+<li>AWS Pricing Calculator</li>
+<li>AWS Support Center</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> Cost Explorer permite visualizar, filtrar, agrupar e analisar custos e uso históricos, além de oferecer previsões.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 47</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>47. Uma organização deseja definir limites de custo e receber alertas quando o gasto real ou previsto ultrapassar um valor definido. Qual serviço deve utilizar?</h2>
+  <ol class="options" type="A"><li>AWS Budgets</li>
+<li>AWS Cost Explorer</li>
+<li>AWS Marketplace</li>
+<li>AWS Organizations</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> AWS Budgets permite criar orçamentos e configurar alertas com base em custos, uso ou reservas/savings plans.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 48</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>48. Qual benefício está associado à cobrança consolidada do AWS Organizations?</h2>
+  <ol class="options" type="A"><li>Agrupar a cobrança de várias contas em uma única fatura e aproveitar benefícios de uso agregado quando aplicável</li>
+<li>Transferir automaticamente todos os dados entre contas</li>
+<li>Eliminar a necessidade de permissões IAM</li>
+<li>Tornar todos os recursos gratuitos</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> A cobrança consolidada reúne custos das contas da organização em uma fatura e pode permitir benefícios de preços por uso agregado.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 49</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>49. Uma empresa quer obter orientação técnica 24 horas por dia para workloads em produção e acesso a verificações completas do Trusted Advisor. Qual plano de suporte tradicional é mais apropriado?</h2>
+  <ol class="options" type="A"><li>Business</li>
+<li>Basic</li>
+<li>Nenhum plano oferece suporte técnico</li>
+<li>Somente Developer</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> O plano Business oferece suporte técnico 24/7 e acesso ampliado a recursos como verificações do Trusted Advisor. A nomenclatura e os benefícios atuais devem ser conferidos no site oficial.</p>
+    </div>
+  </details>
+</section>
+<section class="card" data-domain="Domínio 4 — Cobrança, preços e suporte">
+  <div class="meta"><span>Questão 50</span><span>Múltipla escolha</span><span>Domínio 4 — Cobrança, preços e suporte</span></div>
+  <h2>50. Qual afirmação descreve corretamente o AWS Free Tier?</h2>
+  <ol class="options" type="A"><li>Oferece oportunidades de experimentar serviços sem custo ou com limites gratuitos, sujeitos a condições e limites específicos</li>
+<li>Todos os serviços AWS são gratuitos por 12 meses</li>
+<li>Não há cobrança se uma conta tiver menos de um ano</li>
+<li>O Free Tier elimina custos de transferência de dados em qualquer cenário</li>
+</ol>
+  <details class="answer">
+    <summary>Revelar resposta</summary>
+    <div class="answer-body">
+      <p><strong>Resposta:</strong> A</p>
+      <p><strong>Explicação:</strong> O Free Tier possui ofertas e limites específicos por serviço e modalidade. Ultrapassar limites ou usar recursos não incluídos pode gerar cobranças.</p>
+    </div>
+  </details>
+</section>
+  </main>
+  <footer>
+    <p><strong>Fontes de referência:</strong></p>
+    <p><a href="https://docs.aws.amazon.com/pt_br/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html" target="_blank" rel="noopener">AWS — Guia oficial do exame CLF-C02</a></p>
+    <p><a href="https://docs.aws.amazon.com/pt_br/aws-certification/latest/cloud-practitioner-02/clf-02-revisions.html" target="_blank" rel="noopener">AWS — Histórico de revisões do CLF-C02</a></p>
+  </footer>
+</div>
+<script>
+function updateStatus() {
+  const total = document.querySelectorAll('.answer').length;
+  const opened = document.querySelectorAll('.answer[open]').length;
+  document.getElementById('status').textContent = `${opened}/${total} respostas reveladas`;
+}
+function toggleAll(open) {
+  document.querySelectorAll('.answer').forEach(d => d.open = open);
+  updateStatus();
+}
+document.querySelectorAll('.answer').forEach(d => d.addEventListener('toggle', updateStatus));
+updateStatus();
+</script>
+</body>
+</html>
