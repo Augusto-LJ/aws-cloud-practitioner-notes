@@ -60,6 +60,14 @@ A pasta `09-comparacoes-importantes` contém resumos diretos comparando serviço
 
 ---
 
+### 🧠 Simulado
+
+Contém um arquivo HTML com um simulado de 50 questões, todas geradas por IA baseado em questões que existem e estão disponíveis na internet (por exemplo a prova de teste oficial da AWS com 20 questões)
+
+Para utilizar, baixe o [`simulado`](10-simulado/simulado-aws-cloud-practitioner-clf-c02.html) e abra-o no seu dispositivo, sem necessidade de acesso à internet.
+
+---
+
 ## 🤝 Contribuições
 
 Contribuições são muito bem-vindas!
