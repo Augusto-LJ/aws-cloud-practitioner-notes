@@ -43,6 +43,7 @@ O repositório está organizado por temas, seguindo uma estrutura progressiva:
 - [`07-suporte`](07-suporte/) → Suporte e ferramentas de otimização
 - [`08-migracao-e-inovacao`](08-migracao-e-inovacao/) → Migração e inovação na nuvem
 - [`09-comparacoes-importantes`](09-comparacoes-importantes/) → Comparações rápidas para revisão
+- [`10-simulado`](10-simulado/) → Simulado de 50 questões
 
 ---
 
